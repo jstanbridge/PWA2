@@ -1,0 +1,103 @@
+<!doctype html>  
+<!-- James Stanbridge: PWA2 Project -->
+
+<!--
+	This is the main index of the application
+	
+	All your script tags should be at the bottom of this file
+	
+	The only html element in the body is the container div
+	Your code should load your page templates into the container
+-->
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Register - 日本語 Sensei</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- CSS concatenated and minified via ant build script-->
+	<link rel="stylesheet" href="css/style.css?v=1">
+	<!-- end CSS-->
+	
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+	
+</head>
+
+<body>
+
+	<div id="wrapper">
+	
+		<header>
+			<!-- Logo Here -->
+			<p>日本語 Sensei</p>
+		</header>
+	
+		<div class="content">
+			<p>This is the Registration Page!</p>
+			<form id="register">
+			<label for="fName">First Name: </label>
+			<input type="text" name="fName" value="Enter your first name.">
+			<label for="lName">Last Name: </label>
+			<input type="text" name="lName" value="Enter your last name.">
+			<label for="uName">User Name: </label>
+			<input type="text" name="uName" value="Enter a username.">
+			<label for="emAdd">Email Address: </label>
+			<input type="text" name="emAdd" value="Enter your full email address.">
+			<label for="emAddCon">Confirm Email Address: </label>
+			<input type="text" name="emAddCon" value="Please enter your full email address again.">
+			<label for="pWord">Password: </label>
+			<input type="text" name="pWord" value="Enter a password.">
+			<label for="pWordCon">Confirm Password: </label>
+			<input type="text" name="pWordCon" value="Please enter your password again.">
+			<div class="inpIn">
+				<input type="checkbox" name="tacc">
+				<label for="tacc">I agree to the terms and service of Nihongo Sensei.</label>
+			</div>
+			<input type="submit" value="Submit">
+			</form>
+		</div><!-- end content -->	
+	
+		<footer>
+			<div id="tempNav">
+			<p>Copyright Nihongo Sensei Inc, 2014</p>
+				<p>The following are for convenience only and will be removed when functionally is implemented.</p>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="register.html">Register</a></li>
+					<li><a href="dashboard.html">Dashboard</a></li>
+				</ul>	
+			</div><!-- end tempNav -->
+		</footer>
+	
+	
+		<!-- jquery -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- plugins -->
+
+	
+		<!-- main -->
+		<script type="text/javascript" src="js/main.js"></script>
+		
+	</div><!-- end wrapper -->
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
