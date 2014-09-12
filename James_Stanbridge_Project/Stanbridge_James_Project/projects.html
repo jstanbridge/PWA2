@@ -1,0 +1,110 @@
+<!doctype html>  
+<!-- James Stanbridge: PWA2 Project -->
+
+<!--
+	This is the main index of the application
+	
+	All your script tags should be at the bottom of this file
+	
+	The only html element in the body is the container div
+	Your code should load your page templates into the container
+-->
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Projects - 日本語 Sensei</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- CSS concatenated and minified via ant build script-->
+	<link rel="stylesheet" href="css/style.css?v=1">
+	<!-- end CSS-->
+	
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+	
+</head>
+
+<body>
+
+	<div id="wrapper">
+	
+		<header>
+			<img src="images/nslogo_sm.png" id="logo" />
+			<div class="uCon">
+				<input type="button" value="Dashboard">
+				<input type="button" value="Sign Out">
+			</div>
+			<h2>Welcome User!</h2>
+		</header>
+	
+		<div class="content">
+			<p>This is the Projects Page!</p>
+			
+			<div class="addpro">
+				<p><a href="#" class="modalClick tooltip" data-tip-type="text" data-tip-source="Add a new project.">ADD NEW</a></p>
+			</div>
+			
+			<div id="overlay">
+				<div id="modal">
+					<span class="close">X</span>
+					<h2 class="header">Add Project</h2>
+					<div id="add">
+						<form id="addForm">
+							<label>Project Name: </label><input name="pName" type="text" id="pName" class="tooltip" data-tip-type="text" data-tip-source="Enter a project name."/>
+							<label>Project Description: </label><input name="pDesc" type="text" id="pDesc" class="tooltip" data-tip-type="text" data-tip-source="Enter a project description."/>
+							<label>Project Due Date: </label><input name="pDue" type="text" id="pDue" class="tooltip" data-tip-type="text" data-tip-source="Enter a project due date."/>
+							<p>Select status:</p>
+							
+							<label class="mystatus tooltip" data-tip-type="text" data-tip-source="Urgent"><input type="radio" name="status" id="urgent"><img src="images/urgent.png" /></label>
+							<label class="mystatus tooltip" data-tip-type="text" data-tip-source="Normal"><input type="radio" name="status" id="normal"><img src="images/normal.png" /></label>
+							<label class="mystatus tooltip" data-tip-type="text" data-tip-source="Delayed"><input type="radio" name="status" id="delayed"><img src="images/delayed.png" /></label>
+							<label class="mystatus tooltip" data-tip-type="text" data-tip-source="Complete"><input type="radio" name="status" id="complete"><img src="images/complete.png" /></label>
+							
+							<input name="addButton" type="button" id="addButton" value="Add" />
+						</form>
+					</div><!-- end add -->
+				</div><!-- end modal -->
+			</div><!-- end overlay -->
+			
+		</div><!-- end content -->	
+	
+		<footer>
+			<div id="tempNav">
+				<p>Copyright Nihongo Sensei Inc, 2014</p>
+				<p>The following are for convenience only and will be removed when functionally is implemented.</p>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="register.html">Register</a></li>
+					<li><a href="dashboard.html">Dashboard</a></li>
+					<li><a href="projects.html">Projects</a></li>
+				</ul>	
+			</div><!-- end tempNav -->
+		</footer>
+		
+		<div class="tooltip_container">This is my tooltip.</div>
+		
+	</div><!-- end wrapper -->
+	
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

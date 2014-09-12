@@ -27,6 +27,7 @@
 	<link rel="stylesheet" href="css/style.css?v=1">
 	<!-- end CSS-->
 	
+	<!-- google web font -->
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
 	
 </head>
@@ -36,45 +37,46 @@
 	<div id="wrapper">
 	
 		<header>
-			<!-- Logo Here -->
-			<p>日本語 Sensei</p>
-			<form class="uCon">
-			<label for="username">Username: </label>
-			<input type="text" name="username">
-			<label for="password">Password: </label>
-			<input type="text" name="password">
-			<input type="submit" name="submit" value="Login">
-			</form>
+			<img src="images/nslogo_sm.png" id="logo"  />
+			<div class="uCon">
+				<form>
+				<span style="display:inline-block">
+				<label for="username">Username: </label>
+				<input type="text" name="username" data-tip-type="text" data-tip-source="Enter your username." class="tooltip"></span>
+				<span style="display:inline-block">
+				<label for="password">Password: </label>
+				<input type="text" name="password" data-tip-type="text" data-tip-source="Enter your password." class="tooltip"></span>
+				<span style="display:inline-block">
+				<input type="submit" name="submit" value="Login"></span>
+				</form>
+			</div>
 		</header>
 	
 		<div class="content">
 			<h1>Start Learning Today!</h1><!-- CTA -->
 			<p>Join our exclusive community and get starting improving your Japanese vocabulary now! Just sign up for access to our wide library of language learning features.</p>
-			<a href="register.html"><input type="button" value="Sign Up"></a>
-		</div><!-- end content -->	
-	
+			<input type="button" value="Sign Up" data-tip-type="text" data-tip-source="Start learning today!" class="tooltip">
+		</div><!-- end content -->
+			
 		<footer>
-			<p>Copyright Nihongo Sensei Inc, 2014</p>
 			<div id="tempNav">
+				<p>Copyright Nihongo Sensei Inc, 2014</p>
 				<p>The following are for convenience only and will be removed when functionally is implemented.</p>
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="register.html">Register</a></li>
 					<li><a href="dashboard.html">Dashboard</a></li>
+					<li><a href="projects.html">Projects</a></li>
 				</ul>
 			</div><!-- end tempNav -->
 		</footer>
 	
-	
-		<!-- jquery -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<!-- plugins -->
-
-	
-		<!-- main -->
-		<script type="text/javascript" src="js/main.js"></script>
+		<div class="tooltip_container">This is my tooltip.</div>
   
 	</div><!-- end wrapper -->
+	
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 	
 </body>
 </html>

@@ -36,14 +36,43 @@
 	<div id="wrapper">
 
 		<header>
-			<!-- Logo Here -->
-			<p>日本語 Sensei</p>
+			<img src="images/nslogo_sm.png" id="logo"  />
+			<label for="uCon">Welcome User!</label>
 			<input class="uCon" type="button" value="Sign Out">
 		</header>
 	
 		<div class="content">
 			<p>This is the Dashboard Page!</p>
 			<p>Welcome to your dashboard. Select one of the following options to get started.</p>
+			
+			<div id="nav_cont">
+			
+				<div>
+					<ul id="navtabs">
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#tasks">Tasks</a></li>
+					<li><a href="#users">Users</a></li>
+					</ul>
+				</div>
+			
+				<div id="tabs">
+			
+					<p id="projects">
+					This is the first tab and is the tab for the Projects section. <input type="button" class="projbtn" value="Projects">
+					</p>
+				
+					<p id="tasks">
+					This is the second tab and is the tab for the Tasks section. <input type="button" class="projbtn" value="Tasks">
+					</p>
+				
+					<p id="users">
+					This is the third tab and is the tab for the Users section. <input type="button" class="projbtn" value="Users">
+					</p>
+				
+				</div><!-- end tabs -->
+			
+			</div><!-- end nav_cont -->
+			
 		</div><!-- end content -->	
 	
 		<footer>
@@ -54,20 +83,15 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="register.html">Register</a></li>
 					<li><a href="dashboard.html">Dashboard</a></li>
+					<li><a href="projects.html">Projects</a></li>
 				</ul>
 			</div><!-- end tempNav -->
 		</footer>
-	
-	
-		<!-- jquery -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<!-- plugins -->
-
-	
-		<!-- main -->
-		<script type="text/javascript" src="js/main.js"></script>
 		
 	</div><!-- end wrapper -->
+	
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
   
 </body>
 </html>

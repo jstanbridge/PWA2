@@ -37,30 +37,27 @@
 	
 		<header>
 			<!-- Logo Here -->
-			<p>日本語 Sensei</p>
+			<img src="images/nslogo_sm.png" id="logo"  />
 		</header>
 	
 		<div class="content">
 			<p>This is the Registration Page!</p>
 			<form id="register">
 			<label for="fName">First Name: </label>
-			<input type="text" name="fName" value="Enter your first name.">
+			<input type="text" name="fName" value="Enter your first name."  data-tip-type="text" data-tip-source="Enter your first name." class="tooltip">
 			<label for="lName">Last Name: </label>
-			<input type="text" name="lName" value="Enter your last name.">
+			<input type="text" name="lName" value="Enter your last name."  data-tip-type="text" data-tip-source="Enter your last name." class="tooltip">
 			<label for="uName">User Name: </label>
-			<input type="text" name="uName" value="Enter a username.">
+			<input type="text" name="uName" value="Enter a username."  data-tip-type="text" data-tip-source="Enter a username." class="tooltip">
 			<label for="emAdd">Email Address: </label>
-			<input type="text" name="emAdd" value="Enter your full email address.">
+			<input type="text" name="emAdd" value="Enter your full email address."  data-tip-type="text" data-tip-source="Enter your full email address." class="tooltip">
 			<label for="emAddCon">Confirm Email Address: </label>
-			<input type="text" name="emAddCon" value="Please enter your full email address again.">
+			<input type="text" name="emAddCon" value="Please enter your full email address again."  data-tip-type="text" data-tip-source="Please enter your full email address again." class="tooltip">
 			<label for="pWord">Password: </label>
-			<input type="text" name="pWord" value="Enter a password.">
+			<input type="text" name="pWord" value="Enter a password."  data-tip-type="text" data-tip-source="Enter a password." class="tooltip">
 			<label for="pWordCon">Confirm Password: </label>
-			<input type="text" name="pWordCon" value="Please enter your password again.">
-			<div class="inpIn">
-				<input type="checkbox" name="tacc">
-				<label for="tacc">I agree to the terms and service of Nihongo Sensei.</label>
-			</div>
+			<input type="text" name="pWordCon" value="Please enter your password again."  data-tip-type="text" data-tip-source="Please enter your password again." class="tooltip">
+			<input type="checkbox" name="tacc"><label for="tacc">I agree to the terms and service of Nihongo Sensei.</label></span>
 			<input type="submit" value="Submit">
 			</form>
 		</div><!-- end content -->	
@@ -73,20 +70,17 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="register.html">Register</a></li>
 					<li><a href="dashboard.html">Dashboard</a></li>
+					<li><a href="projects.html">Projects</a></li>
 				</ul>	
 			</div><!-- end tempNav -->
 		</footer>
-	
-	
-		<!-- jquery -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<!-- plugins -->
-
-	
-		<!-- main -->
-		<script type="text/javascript" src="js/main.js"></script>
+		
+		<div class="tooltip_container">This is my tooltip.</div>
 		
 	</div><!-- end wrapper -->
+	
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 	
 </body>
 </html>
