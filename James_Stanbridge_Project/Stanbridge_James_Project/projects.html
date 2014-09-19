@@ -36,19 +36,25 @@
 	<div id="wrapper">
 	
 		<header>
-			<img src="images/nslogo_sm.png" id="logo" />
+			<img src="images/nslogo_sm.png" id="logo"  />
+			<p class="userid"></p>
 			<div class="uCon">
-				<input type="button" value="Dashboard">
-				<input type="button" value="Sign Out">
+				<input type="button" value="Dashboard" id="dboardbtn">
+				<input class="uCon" type="button" value="Sign Out" id="logOut">
 			</div>
-			<h2>Welcome User!</h2>
 		</header>
 	
 		<div class="content">
-			<p>This is the Projects Page!</p>
+			<h2>This is the Projects Page!</h2>
 			
 			<div class="addpro">
-				<p><a href="#" class="modalClick tooltip" data-tip-type="text" data-tip-source="Add a new project.">ADD NEW</a></p>
+				<p><a href="#" class="modalClick tooltip" data-tip-type="text" data-tip-source="Add a new project." id="addnew">ADD NEW</a></p>
+			</div>
+			
+			<div id="projectslist">
+				<h3>Current Projects</h3>
+				<div class="projects">
+				</div>
 			</div>
 			
 			<div id="overlay">
@@ -57,9 +63,9 @@
 					<h2 class="header">Add Project</h2>
 					<div id="add">
 						<form id="addForm">
-							<label>Project Name: </label><input name="pName" type="text" id="pName" class="tooltip" data-tip-type="text" data-tip-source="Enter a project name."/>
-							<label>Project Description: </label><input name="pDesc" type="text" id="pDesc" class="tooltip" data-tip-type="text" data-tip-source="Enter a project description."/>
-							<label>Project Due Date: </label><input name="pDue" type="text" id="pDue" class="tooltip" data-tip-type="text" data-tip-source="Enter a project due date."/>
+							<label>Project Name: </label><input name="pName" type="text" id="pName"/>
+							<label>Project Description: </label><input name="pDesc" type="text" id="projectDescription"/>
+							<label>Project Due Date: </label><input name="pDue" type="text" id="pDue"/>
 							<p>Select status:</p>
 							
 							<label class="mystatus tooltip" data-tip-type="text" data-tip-source="Urgent"><input type="radio" name="status" id="urgent"><img src="images/urgent.png" /></label>
@@ -76,8 +82,8 @@
 		</div><!-- end content -->	
 	
 		<footer>
-			<div id="tempNav">
-				<p>Copyright Nihongo Sensei Inc, 2014</p>
+			<p>Copyright Nihongo Sensei Inc, 2014</p>
+			<!--<div id="tempNav">
 				<p>The following are for convenience only and will be removed when functionally is implemented.</p>
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -85,7 +91,8 @@
 					<li><a href="dashboard.html">Dashboard</a></li>
 					<li><a href="projects.html">Projects</a></li>
 				</ul>	
-			</div><!-- end tempNav -->
+			</div>
+			-->
 		</footer>
 		
 		<div class="tooltip_container">This is my tooltip.</div>

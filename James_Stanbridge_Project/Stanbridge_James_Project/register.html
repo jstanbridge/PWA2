@@ -42,29 +42,31 @@
 	
 		<div class="content">
 			<p>This is the Registration Page!</p>
-			<form id="register">
+			<form id="registerForm">
 			<label for="fName">First Name: </label>
-			<input type="text" name="fName" value="Enter your first name."  data-tip-type="text" data-tip-source="Enter your first name." class="tooltip">
+			<input type="text" name="fName" value="Enter your first name."  data-tip-type="text" data-tip-source="Enter your first name." class="tooltip" id="first">
 			<label for="lName">Last Name: </label>
-			<input type="text" name="lName" value="Enter your last name."  data-tip-type="text" data-tip-source="Enter your last name." class="tooltip">
+			<input type="text" name="lName" value="Enter your last name."  data-tip-type="text" data-tip-source="Enter your last name." class="tooltip" id="last">
 			<label for="uName">User Name: </label>
-			<input type="text" name="uName" value="Enter a username."  data-tip-type="text" data-tip-source="Enter a username." class="tooltip">
+			<input type="text" name="uName" value="Enter a username."  data-tip-type="text" data-tip-source="Enter a username." class="tooltip" id="userName">
 			<label for="emAdd">Email Address: </label>
-			<input type="text" name="emAdd" value="Enter your full email address."  data-tip-type="text" data-tip-source="Enter your full email address." class="tooltip">
+			<input type="text" name="emAdd" value="Enter your full email address."  data-tip-type="text" data-tip-source="Enter your full email address." class="tooltip" id="email">
 			<label for="emAddCon">Confirm Email Address: </label>
 			<input type="text" name="emAddCon" value="Please enter your full email address again."  data-tip-type="text" data-tip-source="Please enter your full email address again." class="tooltip">
 			<label for="pWord">Password: </label>
-			<input type="text" name="pWord" value="Enter a password."  data-tip-type="text" data-tip-source="Enter a password." class="tooltip">
+			<input type="password" name="pWord"  data-tip-type="text" data-tip-source="Enter a password." class="tooltip" id="password">
 			<label for="pWordCon">Confirm Password: </label>
-			<input type="text" name="pWordCon" value="Please enter your password again."  data-tip-type="text" data-tip-source="Please enter your password again." class="tooltip">
-			<input type="checkbox" name="tacc"><label for="tacc">I agree to the terms and service of Nihongo Sensei.</label></span>
-			<input type="submit" value="Submit">
+			<input type="password" name="pWordCon" data-tip-type="text" data-tip-source="Please enter your password again." class="tooltip"><br />
+			
+			<input type="checkbox" name="tacc"><label for="tacc">I agree to the terms and service of Nihongo Sensei.</label><br />
+			
+			<input type="button" id="register" value="Submit">
 			</form>
 		</div><!-- end content -->	
 	
 		<footer>
-			<div id="tempNav">
 			<p>Copyright Nihongo Sensei Inc, 2014</p>
+			<!--<div id="tempNav">
 				<p>The following are for convenience only and will be removed when functionally is implemented.</p>
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -72,7 +74,8 @@
 					<li><a href="dashboard.html">Dashboard</a></li>
 					<li><a href="projects.html">Projects</a></li>
 				</ul>	
-			</div><!-- end tempNav -->
+			</div>
+			-->
 		</footer>
 		
 		<div class="tooltip_container">This is my tooltip.</div>

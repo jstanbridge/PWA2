@@ -17,15 +17,20 @@ body {
 #wrapper {
 	width: 960px;
 	margin: 0 auto;	
-	background-color: #E72C2C;
-	padding: 10px;
+	background-color: #fbede0;
+	padding: 5px 20px;
 	border-left: 1px solid #000;
 	border-right: 1px solid #000;
 	border-bottom: 1px solid #000;
 }
 
 footer {
-	margin-top 30px;
+	margin: 30px 0px 0px 0px;
+	background-color: #000;
+	color: #fff;
+	text-align: right;
+	font-size: x-small;
+	padding: 5px 10px;
 }
 
 /* links */
@@ -47,6 +52,15 @@ a:hover {
 h1 {
 	font-weight: 500;
 	font-size: 24px;
+	text-align: center;
+}
+
+/* front page img */
+
+#fpimg {
+	width: 640px;
+	margin: 0px auto;
+	border: 1px solid #000;
 }
 
 /* temporary navigation styles */
@@ -91,11 +105,11 @@ input[type=submit]:hover {
 
 /* registration form styles */
 
-#register label {
+#registerForm label {
 	display: block;
 }
 
-#register input {
+#registerForm input {
 	width: 250px;
 }
 
@@ -114,6 +128,10 @@ input[type=submit]:hover {
 
 /* tabbed nav styles */
 
+#nav_content {
+	margin-top: 50px;
+}
+
 #navtabs {
 	width: 500px;
 	height: 20px;
@@ -122,6 +140,7 @@ input[type=submit]:hover {
 	text-decoration: none;
 	list-style-type: none;
 	margin: 0px auto;
+	border: 1px solid #000;
 }
 
 #navtabs li {
@@ -133,6 +152,11 @@ input[type=submit]:hover {
 	padding: 10px;
 	background-color: #fff;
 	margin: 0px auto 30px auto;
+	border: 1px solid #000;
+}
+
+#dintro {
+	margin-bottom: 40px;
 }
 
 /* modal styles */
@@ -212,6 +236,29 @@ input[type=button] {
 
 #addForm label {
 	margin-left: 3px;
+}
+
+#addnew {
+	background-color: #e72c2c;
+	padding: 5px;
+	color:;
+	border: 3px solid #e72c2c;
+	border-radius: 5px;
+}
+
+/* current projects styles */
+.projectbox {
+	background-color: #fff;
+	border: 1px solid #000;
+	padding: 5px;
+	font-size: 14px;
+}
+
+.projectbox button {
+	background-color: #FAC127;
+	border: 1px solid #000;
+	margin-top: 10px;
+	margin-left: 5px;
 }
 
 /* other styles */

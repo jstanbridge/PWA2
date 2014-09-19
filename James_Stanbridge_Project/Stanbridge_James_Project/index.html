@@ -42,25 +42,26 @@
 				<form>
 				<span style="display:inline-block">
 				<label for="username">Username: </label>
-				<input type="text" name="username" data-tip-type="text" data-tip-source="Enter your username." class="tooltip"></span>
+				<input type="text" id="user" name="username" data-tip-type="text" data-tip-source="Enter your username." class="tooltip"></span>
 				<span style="display:inline-block">
 				<label for="password">Password: </label>
-				<input type="text" name="password" data-tip-type="text" data-tip-source="Enter your password." class="tooltip"></span>
+				<input type="password" id="pass" name="password" data-tip-type="text" data-tip-source="Enter your password." class="tooltip"></span>
 				<span style="display:inline-block">
-				<input type="submit" name="submit" value="Login"></span>
+				<input type="button" id="signinButton" name="submit" value="Login"></span>
 				</form>
 			</div>
 		</header>
 	
 		<div class="content">
 			<h1>Start Learning Today!</h1><!-- CTA -->
-			<p>Join our exclusive community and get starting improving your Japanese vocabulary now! Just sign up for access to our wide library of language learning features.</p>
-			<input type="button" value="Sign Up" data-tip-type="text" data-tip-source="Start learning today!" class="tooltip">
+			<div id="fpimg"><img src="images/japan.jpg"></div>
+			<p id="cta">Join our exclusive community and get starting improving your Japanese vocabulary now! Just sign up for access to our wide library of language learning features.</p>
+			<input type="button" value="Sign Up" data-tip-type="text" data-tip-source="Start learning today!" class="tooltip" id="signUp">
 		</div><!-- end content -->
 			
 		<footer>
-			<div id="tempNav">
-				<p>Copyright Nihongo Sensei Inc, 2014</p>
+			<p>Copyright Nihongo Sensei Inc, 2014</p>
+			<!--<div id="tempNav">
 				<p>The following are for convenience only and will be removed when functionally is implemented.</p>
 				<ul>
 					<li><a href="index.html">Home</a></li>
@@ -68,7 +69,8 @@
 					<li><a href="dashboard.html">Dashboard</a></li>
 					<li><a href="projects.html">Projects</a></li>
 				</ul>
-			</div><!-- end tempNav -->
+			</div>
+			-->
 		</footer>
 	
 		<div class="tooltip_container">This is my tooltip.</div>
