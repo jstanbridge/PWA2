@@ -1,0 +1,37 @@
+<script>
+//Opening script tag
+(function() {
+//Declare function pull images from API.
+
+	var flickerAPI = "<a href="<a href=">http://api.flickr.com/services/feeds/photos_public...</a>"><a href="http://api.flickr.com/services/feeds/photos_public...">http://api.flickr.com/services/feeds/photos_public...</a>
+	//Set up the variable for use in json and set API link location.
+	$.getJSON( flickerAPI, {
+	//Load json data from the flickerAPI
+		tags: "mount rainier",
+		//Search flicker for images with the tag "mount rainier"
+		tagmode: "any",
+		//Select any tag modes
+		format: "json"
+		//Format as json data
+		})
+		//End getJSON
+		.done(function( data ) {
+		//When that is done, set up function to add images to html
+			$.each( data.items, function( i, item ) {
+			//For each item ulled execute the following function using i and item
+				$( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
+				//Add the img via it's src (link) to the images div
+					if ( i === 3 ) {
+					//Once three imgs have been pulled...
+						return false;
+						//Stop pulling images.
+					}
+					//End if statement
+			});
+			//End $.each
+		});
+		//End .done
+
+})();
+//Closing function tag
+</script>
