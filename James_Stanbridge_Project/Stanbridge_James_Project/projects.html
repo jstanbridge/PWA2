@@ -1,15 +1,6 @@
 <!doctype html>  
 <!-- James Stanbridge: PWA2 Project -->
 
-<!--
-	This is the main index of the application
-	
-	All your script tags should be at the bottom of this file
-	
-	The only html element in the body is the container div
-	Your code should load your page templates into the container
--->
-
 <html lang="en">
 <head>
 
@@ -25,6 +16,9 @@
 	
 	<!-- CSS concatenated and minified via ant build script-->
 	<link rel="stylesheet" href="css/style.css?v=1">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
 	<!-- end CSS-->
 	
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
@@ -45,27 +39,27 @@
 		</header>
 	
 		<div class="content">
-			<h2>This is the Projects Page!</h2>
+			<h2>This is the Vocabulary Sets Page!</h2>
 			
 			<div class="addpro">
 				<p><a href="#" class="modalClick tooltip" data-tip-type="text" data-tip-source="Add a new project." id="addnew">ADD NEW</a></p>
 			</div>
 			
 			<div id="projectslist">
-				<h3>Current Projects</h3>
-				<div class="projects">
+				<h3>Current Vocab Sets</h3>
+				<div class="projects" id="sortable">
 				</div>
 			</div>
 			
 			<div id="overlay">
 				<div id="modal">
 					<span class="close">X</span>
-					<h2 class="header">Add Project</h2>
+					<h2 class="header">Add New Vocab Set</h2>
 					<div id="add">
 						<form id="addForm">
-							<label>Project Name: </label><input name="pName" type="text" id="pName"/>
-							<label>Project Description: </label><input name="pDesc" type="text" id="projectDescription"/>
-							<label>Project Due Date: </label><input name="pDue" type="text" id="pDue"/>
+							<label>Set Name: </label><input name="pName" type="text" id="pName"/>
+							<label>Set Description: </label><input name="pDesc" type="text" id="projectDescription"/>
+							<label>Quiz Due Date: </label><input name="pDue" type="text" id="pDue" class="mydatepicker"/>
 							<p>Select status:</p>
 							
 							<label class="mystatus tooltip" data-tip-type="text" data-tip-source="Urgent"><input type="radio" name="status" id="urgent"><img src="images/urgent.png" /></label>
@@ -100,6 +94,7 @@
 	</div><!-- end wrapper -->
 	
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	
 </body>

@@ -166,7 +166,7 @@ $(document).ready(function(){
 		window.location.assign('register.html')
 	});
 	
-	//Signup Button Code
+	//Dashboard Button Code
 	$('#dboardbtn').click(function(){
 		window.location.assign('dashboard.html')
 	});
@@ -241,8 +241,8 @@ $(document).ready(function(){
 						$(".projects").append(
 							'<div class="projectbox">' + 
 							" <input class='projectid' type='hidden' value='" + result.id + "'>" +
-							" Project Name: " + result.projectName + "<br>" +
-							" Project Description: " + result.projectDescription + "<br>" +
+							" Set Name: " + result.projectName + "<br>" +
+							" Set Description: " + result.projectDescription + "<br>" +
 							" Project Status: " + result.status + "<br>"
 							+ '<button class="editbtn">Edit</button>'
 							+ '<button class="deletebtn">Delete</button>'
@@ -275,6 +275,26 @@ $(document).ready(function(){
 		})
 	}
 	projects();
+	
+	
+	
+	//Sortable Code
+	$(".mydatepicker").datepicker();
+	
+	
+	
+	//Drag & Drop Code
+	$("#sortable").sortable();
+	$("#sortable").disableSelection();
+	
+	
+	
+	//Progress Bar Code
+	$(function() {
+    	$( "#progressbar" ).progressbar({
+      	value: 37
+    	});
+  	});
 	
 	
 	

@@ -1,15 +1,6 @@
 <!doctype html>  
 <!-- James Stanbridge: PWA2 Project -->
 
-<!--
-	This is the main index of the application
-	
-	All your script tags should be at the bottom of this file
-	
-	The only html element in the body is the container div
-	Your code should load your page templates into the container
--->
-
 <html lang="en">
 <head>
 
@@ -25,6 +16,9 @@
 	
 	<!-- CSS concatenated and minified via ant build script-->
 	<link rel="stylesheet" href="css/style.css?v=1">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
 	<!-- end CSS-->
 	
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
@@ -43,14 +37,18 @@
 	
 		<div class="content">
 			<h2>This is the Dashboard Page!</h2>
-			<p id="dintro">Welcome to your dashboard. Select one of the following options to get started.</p>
+			<p>Your current card mastery:</p>
+			<div id="progressbar"></div>
+			<p>Select one of the following options to get started.</p>
 			
 			<div id="nav_cont">
 			
 				<div>
 					<ul id="navtabs">
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#tasks">Tasks</a></li>
+					<li><a href="#projects">Vocab Sets</a></li>
+					<li style="color:#FAC127"> |</li>
+					<li><a href="#tasks">Quizes</a></li>
+					<li style="color:#FAC127"> |</li>
 					<li><a href="#users">Users</a></li>
 					</ul>
 				</div>
@@ -58,15 +56,15 @@
 				<div id="tabs">
 			
 					<p id="projects">
-					This is the first tab and is the tab for the Projects section. <input type="button" class="projbtn" value="Projects">
+					This is where you can create new vocabulary flashcard sets or edit/review ones you've already created. <input type="button" class="projbtn" value="Vocab Sets">
 					</p>
 				
 					<p id="tasks">
-					This is the second tab and is the tab for the Tasks section. <input type="button" class="projbtn" value="Tasks">
+					Here you can select one of your vocabulary sets and take a graded quiz on it. We store your results so you can compare old scores and new scores. <input type="button" class="projbtn" value="Quizes">
 					</p>
 				
 					<p id="users">
-					This is the third tab and is the tab for the Users section. <input type="button" class="projbtn" value="Users">
+					Grant other users access to your created list so they can study them along with you. <input type="button" class="projbtn" value="Users">
 					</p>
 				
 				</div><!-- end tabs -->
@@ -92,6 +90,7 @@
 	</div><!-- end wrapper -->
 	
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
   
 </body>
